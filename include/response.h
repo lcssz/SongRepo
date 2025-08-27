@@ -6,6 +6,6 @@ typedef struct {
   unsigned char count_qword;
 } Response;
 
-const char *createQuery(const char *word);
+const char *create_query(const char *word);
 
 #endif /* ifndef TRIPLE_H */
