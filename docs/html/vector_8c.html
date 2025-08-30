@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Repositório de Letras de Músicas: Referência ao ficheiro src/structures/vector.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Repositório de Letras de Músicas<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de repositório de letras de músicas implementado em C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('vector_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência ao ficheiro vector.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementação do vetor dinâmico com busca binária.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="llist_8h_source.html">../../include/structures/llist.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
+<p><a href="vector_8c_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:abc8b3afaf6222e229bebe8c8ebf9ecc8" id="r_abc8b3afaf6222e229bebe8c8ebf9ecc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector.html">Vector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc8b3afaf6222e229bebe8c8ebf9ecc8">create_vector</a> (int initial_capacity)</td></tr>
+<tr class="memdesc:abc8b3afaf6222e229bebe8c8ebf9ecc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria um novo vetor dinâmico.  <br /></td></tr>
+<tr class="memitem:ae7393cd42e86fd2fe1eda3340ae4cfa5" id="r_ae7393cd42e86fd2fe1eda3340ae4cfa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7393cd42e86fd2fe1eda3340ae4cfa5">expand_vector</a> (<a class="el" href="structVector.html">Vector</a> *vec)</td></tr>
+<tr class="memitem:a9aea6032f8988c3f8189e9f9a130ff54" id="r_a9aea6032f8988c3f8189e9f9a130ff54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aea6032f8988c3f8189e9f9a130ff54">insert_word_vector</a> (<a class="el" href="structVector.html">Vector</a> *vec, const char *word, const char *title, const char *author, const char *verse_snippet, int freq_in_song)</td></tr>
+<tr class="memdesc:a9aea6032f8988c3f8189e9f9a130ff54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere uma palavra no vetor com suas informações.  <br /></td></tr>
+<tr class="memitem:a35bc0bd41756eac44ddb7371fb376cd6" id="r_a35bc0bd41756eac44ddb7371fb376cd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWordInfo.html">WordInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35bc0bd41756eac44ddb7371fb376cd6">search_word_vector</a> (<a class="el" href="structVector.html">Vector</a> *vec, const char *word)</td></tr>
+<tr class="memdesc:a35bc0bd41756eac44ddb7371fb376cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca uma palavra no vetor usando busca binária.  <br /></td></tr>
+<tr class="memitem:a32df1668a744687532eb24ec69cabd53" id="r_a32df1668a744687532eb24ec69cabd53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32df1668a744687532eb24ec69cabd53">compare_words</a> (const void *a, const void *b)</td></tr>
+<tr class="memitem:a040ef05b6410282188721fd6c30dfe0c" id="r_a040ef05b6410282188721fd6c30dfe0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a040ef05b6410282188721fd6c30dfe0c">sort_vector</a> (<a class="el" href="structVector.html">Vector</a> *vec)</td></tr>
+<tr class="memdesc:a040ef05b6410282188721fd6c30dfe0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordena o vetor alfabeticamente para busca binária.  <br /></td></tr>
+<tr class="memitem:a198417967ef24ada410abbb475e6966d" id="r_a198417967ef24ada410abbb475e6966d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a198417967ef24ada410abbb475e6966d">free_vector</a> (<a class="el" href="structVector.html">Vector</a> *vec)</td></tr>
+<tr class="memdesc:a198417967ef24ada410abbb475e6966d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera a memória de um vetor.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Implementação do vetor dinâmico com busca binária. </p>
+<dl class="section author"><dt>Autor</dt><dd>AED2 - Algoritmos e Estruturas de Dados II </dd></dl>
+<dl class="section version"><dt>Versão</dt><dd>1.0</dd></dl>
+<p>Este arquivo contém a implementação de um vetor dinâmico que armazena estruturas <a class="el" href="structWordInfo.html" title="Estrutura para armazenar informações completas de uma palavra.">WordInfo</a> e suporta busca binária após ordenação. O vetor pode ser expandido dinamicamente conforme necessário. </p>
+
+<p class="definition">Definido no ficheiro <a class="el" href="vector_8c_source.html">vector.c</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="abc8b3afaf6222e229bebe8c8ebf9ecc8" name="abc8b3afaf6222e229bebe8c8ebf9ecc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc8b3afaf6222e229bebe8c8ebf9ecc8">&#9670;&#160;</a></span>create_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVector.html">Vector</a> * create_vector </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>initial_capacity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria um novo vetor dinâmico. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initial_capacity</td><td>Capacidade inicial do vetor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Ponteiro para o vetor criado ou NULL se falhar </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a40">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a> e <a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2structures_2vector_8c-example.html#a1">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/structures/vector.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="vector_8c_source.html#l00047">47</a> do ficheiro <a class="el" href="vector_8c_source.html">vector.c</a>.</p>
+
+</div>
+</div>
+<a id="ae7393cd42e86fd2fe1eda3340ae4cfa5" name="ae7393cd42e86fd2fe1eda3340ae4cfa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7393cd42e86fd2fe1eda3340ae4cfa5">&#9670;&#160;</a></span>expand_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void expand_vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2structures_2vector_8c-example.html#a6">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/structures/vector.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="vector_8c_source.html#l00090">90</a> do ficheiro <a class="el" href="vector_8c_source.html">vector.c</a>.</p>
+
+</div>
+</div>
+<a id="a9aea6032f8988c3f8189e9f9a130ff54" name="a9aea6032f8988c3f8189e9f9a130ff54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aea6032f8988c3f8189e9f9a130ff54">&#9670;&#160;</a></span>insert_word_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void insert_word_vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>word</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>title</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>author</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>verse_snippet</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>freq_in_song</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere uma palavra no vetor com suas informações. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Vetor onde inserir </td></tr>
+    <tr><td class="paramname">word</td><td>Palavra a ser inserida </td></tr>
+    <tr><td class="paramname">title</td><td>Título da música </td></tr>
+    <tr><td class="paramname">author</td><td>Autor da música </td></tr>
+    <tr><td class="paramname">verse_snippet</td><td>Trecho da estrofe </td></tr>
+    <tr><td class="paramname">freq_in_song</td><td>Frequência na música </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a17">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a> e <a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2structures_2vector_8c-example.html#a7">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/structures/vector.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="vector_8c_source.html#l00136">136</a> do ficheiro <a class="el" href="vector_8c_source.html">vector.c</a>.</p>
+
+</div>
+</div>
+<a id="a35bc0bd41756eac44ddb7371fb376cd6" name="a35bc0bd41756eac44ddb7371fb376cd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35bc0bd41756eac44ddb7371fb376cd6">&#9670;&#160;</a></span>search_word_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structWordInfo.html">WordInfo</a> * search_word_vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>word</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca uma palavra no vetor usando busca binária. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Vetor onde buscar </td></tr>
+    <tr><td class="paramname">word</td><td>Palavra a ser buscada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Ponteiro para <a class="el" href="structWordInfo.html" title="Estrutura para armazenar informações completas de uma palavra.">WordInfo</a> se encontrada, NULL caso contrário </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a24">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a> e <a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2structures_2vector_8c-example.html#a14">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/structures/vector.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="vector_8c_source.html#l00210">210</a> do ficheiro <a class="el" href="vector_8c_source.html">vector.c</a>.</p>
+
+</div>
+</div>
+<a id="a32df1668a744687532eb24ec69cabd53" name="a32df1668a744687532eb24ec69cabd53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32df1668a744687532eb24ec69cabd53">&#9670;&#160;</a></span>compare_words()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int compare_words </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2structures_2vector_8c-example.html#a15">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/structures/vector.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="vector_8c_source.html#l00258">258</a> do ficheiro <a class="el" href="vector_8c_source.html">vector.c</a>.</p>
+
+</div>
+</div>
+<a id="a040ef05b6410282188721fd6c30dfe0c" name="a040ef05b6410282188721fd6c30dfe0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040ef05b6410282188721fd6c30dfe0c">&#9670;&#160;</a></span>sort_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sort_vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ordena o vetor alfabeticamente para busca binária. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Vetor a ser ordenado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a36">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a> e <a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2structures_2vector_8c-example.html#a16">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/structures/vector.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="vector_8c_source.html#l00291">291</a> do ficheiro <a class="el" href="vector_8c_source.html">vector.c</a>.</p>
+
+</div>
+</div>
+<a id="a198417967ef24ada410abbb475e6966d" name="a198417967ef24ada410abbb475e6966d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198417967ef24ada410abbb475e6966d">&#9670;&#160;</a></span>free_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector.html">Vector</a> *</td>          <td class="paramname"><span class="paramname"><em>vec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libera a memória de um vetor. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Vetor a ser liberado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a45">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a> e <a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2structures_2vector_8c-example.html#a17">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/structures/vector.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="vector_8c_source.html#l00324">324</a> do ficheiro <a class="el" href="vector_8c_source.html">vector.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_6272b9d4c8f62107df4c324a97442de0.html">structures</a></li><li class="navelem"><a href="vector_8c.html">vector.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

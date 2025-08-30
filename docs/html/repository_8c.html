@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Repositório de Letras de Músicas: Referência ao ficheiro src/core/repository.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Repositório de Letras de Músicas<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de repositório de letras de músicas implementado em C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('repository_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência ao ficheiro repository.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementação do repositório de letras de músicas.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="repository_8h_source.html">../../include/core/repository.h</a>&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;ctype.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+</div>
+<p><a href="repository_8c_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a3b9bb1d40f071b19cd04812610fa4919" id="r_a3b9bb1d40f071b19cd04812610fa4919"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b9bb1d40f071b19cd04812610fa4919">to_lowercase</a> (const char *str)</td></tr>
+<tr class="memdesc:a3b9bb1d40f071b19cd04812610fa4919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converte uma string para minúsculo.  <br /></td></tr>
+<tr class="memitem:ad178a03c14853e03e13b4a3424d44ea5" id="r_ad178a03c14853e03e13b4a3424d44ea5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad178a03c14853e03e13b4a3424d44ea5">clean_word</a> (const char *word)</td></tr>
+<tr class="memdesc:ad178a03c14853e03e13b4a3424d44ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpa uma palavra removendo pontuação e convertendo para minúsculo.  <br /></td></tr>
+<tr class="memitem:a6c4680f12603e2d76a094a309971f295" id="r_a6c4680f12603e2d76a094a309971f295"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c4680f12603e2d76a094a309971f295">process_line_and_insert_words</a> (const char *line)</td></tr>
+<tr class="memdesc:a6c4680f12603e2d76a094a309971f295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processa uma linha e insere palavras nas estruturas básicas.  <br /></td></tr>
+<tr class="memitem:af2d2b2f5146636212bfb4f128ec111a9" id="r_af2d2b2f5146636212bfb4f128ec111a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2d2b2f5146636212bfb4f128ec111a9">process_music_file_for_word_count</a> (const char *filepath)</td></tr>
+<tr class="memdesc:af2d2b2f5146636212bfb4f128ec111a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processa arquivo de música para contagem de palavras (versão básica)  <br /></td></tr>
+<tr class="memitem:a23eb96b0f7939d5d51881bd66a93a49e" id="r_a23eb96b0f7939d5d51881bd66a93a49e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23eb96b0f7939d5d51881bd66a93a49e">process_music_file_complete</a> (const char *filepath, <a class="el" href="structRepository.html">Repository</a> *repo)</td></tr>
+<tr class="memdesc:a23eb96b0f7939d5d51881bd66a93a49e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processa arquivo de música completo com todas as informações.  <br /></td></tr>
+<tr class="memitem:a2ee4c47764ac9386c51dfb36bc45ffce" id="r_a2ee4c47764ac9386c51dfb36bc45ffce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ee4c47764ac9386c51dfb36bc45ffce">search_word_in_all_structures</a> (<a class="el" href="structRepository.html">Repository</a> *repo, const char *word)</td></tr>
+<tr class="memdesc:a2ee4c47764ac9386c51dfb36bc45ffce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca uma palavra em todas as estruturas de dados.  <br /></td></tr>
+<tr class="memitem:a669caf6c704193af451b45d7ad19a7e6" id="r_a669caf6c704193af451b45d7ad19a7e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a669caf6c704193af451b45d7ad19a7e6">search_by_frequency</a> (<a class="el" href="structRepository.html">Repository</a> *repo, int min_frequency)</td></tr>
+<tr class="memdesc:a669caf6c704193af451b45d7ad19a7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca palavras por frequência mínima.  <br /></td></tr>
+<tr class="memitem:a28bb13d6eb9abc6a3f50c7f3de3280aa" id="r_a28bb13d6eb9abc6a3f50c7f3de3280aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28bb13d6eb9abc6a3f50c7f3de3280aa">print_word_info</a> (<a class="el" href="structWordInfo.html">WordInfo</a> *info)</td></tr>
+<tr class="memdesc:a28bb13d6eb9abc6a3f50c7f3de3280aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime informações de uma palavra.  <br /></td></tr>
+<tr class="memitem:ac764dcb3addb7e5d48d0f991d77dc1e8" id="r_ac764dcb3addb7e5d48d0f991d77dc1e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac764dcb3addb7e5d48d0f991d77dc1e8">print_search_results</a> (const char *word, <a class="el" href="structWordInfo.html">WordInfo</a> *vector_result, <a class="el" href="structWordInfo.html">WordInfo</a> *bst_result, <a class="el" href="structWordInfo.html">WordInfo</a> *avl_result, double vector_time, double bst_time, double avl_time)</td></tr>
+<tr class="memdesc:ac764dcb3addb7e5d48d0f991d77dc1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime resultados de busca em todas as estruturas.  <br /></td></tr>
+<tr class="memitem:af67480724089637b55a8148566870f16" id="r_af67480724089637b55a8148566870f16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af67480724089637b55a8148566870f16">show_menu</a> ()</td></tr>
+<tr class="memdesc:af67480724089637b55a8148566870f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe o menu principal do sistema.  <br /></td></tr>
+<tr class="memitem:a3c3453595506a46bc4d0ad3602b066db" id="r_a3c3453595506a46bc4d0ad3602b066db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c3453595506a46bc4d0ad3602b066db">load_files_menu</a> (<a class="el" href="structRepository.html">Repository</a> *repo)</td></tr>
+<tr class="memdesc:a3c3453595506a46bc4d0ad3602b066db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu para carregar arquivos de música.  <br /></td></tr>
+<tr class="memitem:a0fd8b45fcff008877d963862e9bc1312" id="r_a0fd8b45fcff008877d963862e9bc1312"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd8b45fcff008877d963862e9bc1312">search_word_menu</a> (<a class="el" href="structRepository.html">Repository</a> *repo)</td></tr>
+<tr class="memdesc:a0fd8b45fcff008877d963862e9bc1312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu para buscar palavras.  <br /></td></tr>
+<tr class="memitem:ab0544503969832211ae7025dd243b862" id="r_ab0544503969832211ae7025dd243b862"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0544503969832211ae7025dd243b862">search_frequency_menu</a> (<a class="el" href="structRepository.html">Repository</a> *repo)</td></tr>
+<tr class="memdesc:ab0544503969832211ae7025dd243b862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu para buscar por frequência.  <br /></td></tr>
+<tr class="memitem:a50ba20cf0b729865ebdadefb8558c4ed" id="r_a50ba20cf0b729865ebdadefb8558c4ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRepository.html">Repository</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50ba20cf0b729865ebdadefb8558c4ed">create_repository</a> ()</td></tr>
+<tr class="memdesc:a50ba20cf0b729865ebdadefb8558c4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria um novo repositório.  <br /></td></tr>
+<tr class="memitem:a1f80ae6ee651e8085115bb2575b415a4" id="r_a1f80ae6ee651e8085115bb2575b415a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f80ae6ee651e8085115bb2575b415a4">free_repository</a> (<a class="el" href="structRepository.html">Repository</a> *repo)</td></tr>
+<tr class="memdesc:a1f80ae6ee651e8085115bb2575b415a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera a memória de um repositório.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Implementação do repositório de letras de músicas. </p>
+<dl class="section author"><dt>Autor</dt><dd>AED2 - Algoritmos e Estruturas de Dados II </dd></dl>
+<dl class="section version"><dt>Versão</dt><dd>1.0</dd></dl>
+<p>Este arquivo contém a implementação das funções do repositório, incluindo processamento de arquivos, busca de palavras e interface do usuário. </p>
+
+<p class="definition">Definido no ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentação das funções</h2>
+<a id="a3b9bb1d40f071b19cd04812610fa4919" name="a3b9bb1d40f071b19cd04812610fa4919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9bb1d40f071b19cd04812610fa4919">&#9670;&#160;</a></span>to_lowercase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * to_lowercase </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converte uma string para minúsculo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>String a ser convertida </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>String em minúsculo ou NULL se falhar</dd></dl>
+<p>Cria uma cópia da string original e converte todos os caracteres para minúsculo usando a função tolower() da biblioteca ctype.h. Retorna NULL se a string de entrada for NULL ou se houver falha na alocação de memória. </p>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a1">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00029">29</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="ad178a03c14853e03e13b4a3424d44ea5" name="ad178a03c14853e03e13b4a3424d44ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad178a03c14853e03e13b4a3424d44ea5">&#9670;&#160;</a></span>clean_word()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * clean_word </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>word</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Limpa uma palavra removendo pontuação e convertendo para minúsculo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">word</td><td>Palavra a ser limpa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Palavra limpa ou NULL se falhar </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a0">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00059">59</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="a6c4680f12603e2d76a094a309971f295" name="a6c4680f12603e2d76a094a309971f295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4680f12603e2d76a094a309971f295">&#9670;&#160;</a></span>process_line_and_insert_words()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void process_line_and_insert_words </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>line</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processa uma linha e insere palavras nas estruturas básicas. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Linha a ser processada</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Divide a linha em tokens usando strtok() e insere cada palavra válida (com 3 ou mais caracteres) nas árvores binária e AVL básicas. Esta função é usada na versão simplificada do processamento.</p>
+<dl class="section warning"><dt>Aviso</dt><dd>Esta função termina o programa (exit) se houver falha na alocação de memória, pois é uma versão simplificada para demonstração.</dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>As palavras são inseridas diretamente sem limpeza adicional, assumindo que já foram processadas adequadamente. </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a2">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00097">97</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="af2d2b2f5146636212bfb4f128ec111a9" name="af2d2b2f5146636212bfb4f128ec111a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d2b2f5146636212bfb4f128ec111a9">&#9670;&#160;</a></span>process_music_file_for_word_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void process_music_file_for_word_count </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filepath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processa arquivo de música para contagem de palavras (versão básica) </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>Caminho para o arquivo de música</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Lê um arquivo .txt contendo uma letra de música e processa cada linha, inserindo as palavras nas estruturas básicas (árvores binária e AVL). Esta é uma versão simplificada que não armazena informações completas como título, autor e trechos da música.</p>
+<dl class="section note"><dt>Nota</dt><dd>Esta função assume que o arquivo tem o formato:<ul>
+<li>Primeira linha: título da música</li>
+<li>Segunda linha: autor</li>
+<li>Linhas subsequentes: letra da música</li>
+</ul>
+</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>A função não valida extensivamente o formato do arquivo e pode falhar silenciosamente se o arquivo não existir ou estiver mal formatado. </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a7">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00138">138</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="a23eb96b0f7939d5d51881bd66a93a49e" name="a23eb96b0f7939d5d51881bd66a93a49e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23eb96b0f7939d5d51881bd66a93a49e">&#9670;&#160;</a></span>process_music_file_complete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void process_music_file_complete </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filepath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structRepository.html">Repository</a> *</td>          <td class="paramname"><span class="paramname"><em>repo</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processa arquivo de música completo com todas as informações. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>Caminho para o arquivo de música </td></tr>
+    <tr><td class="paramname">repo</td><td>Repositório onde armazenar os dados</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Esta é a função principal de processamento que lê um arquivo .txt contendo uma letra de música e processa cada palavra, inserindo-as nas três estruturas de dados do repositório (vetor, árvore binária e árvore AVL) com informações completas.</p>
+<p>A função:</p><ul>
+<li>Lê o título e autor da música</li>
+<li>Processa cada linha da letra</li>
+<li>Limpa cada palavra (remove pontuação, converte para minúsculo)</li>
+<li>Filtra palavras com menos de 4 caracteres</li>
+<li>Cria estruturas <a class="el" href="structWordInfo.html" title="Estrutura para armazenar informações completas de uma palavra.">WordInfo</a> com informações completas</li>
+<li>Insere nas três estruturas de dados</li>
+</ul>
+<dl class="section note"><dt>Nota</dt><dd>Formato esperado do arquivo:<ul>
+<li>Linha 1: Título da música</li>
+<li>Linha 2: Autor da música</li>
+<li>Linhas 3+: Letra da música</li>
+</ul>
+</dd>
+<dd>
+Complexidade: O(n * log m) onde n é o número de palavras e m é o tamanho das estruturas de dados.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>A função assume que o arquivo está bem formatado e pode falhar silenciosamente se o arquivo não existir ou estiver mal formatado. </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a8">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00194">194</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="a2ee4c47764ac9386c51dfb36bc45ffce" name="a2ee4c47764ac9386c51dfb36bc45ffce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee4c47764ac9386c51dfb36bc45ffce">&#9670;&#160;</a></span>search_word_in_all_structures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void search_word_in_all_structures </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRepository.html">Repository</a> *</td>          <td class="paramname"><span class="paramname"><em>repo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>word</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca uma palavra em todas as estruturas de dados. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">repo</td><td>Repositório onde buscar </td></tr>
+    <tr><td class="paramname">word</td><td>Palavra a ser buscada</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Realiza a busca da palavra especificada em todas as três estruturas de dados (vetor, árvore binária e árvore AVL) e mede o tempo de execução de cada busca. Os resultados são exibidos com os tempos de performance para comparação.</p>
+<p>A função:</p><ul>
+<li>Limpa a palavra de entrada (remove pontuação, converte para minúsculo)</li>
+<li>Executa busca no vetor usando busca binária</li>
+<li>Executa busca na árvore binária de busca</li>
+<li>Executa busca na árvore AVL</li>
+<li>Mede o tempo de cada operação usando clock()</li>
+<li>Exibe os resultados formatados</li>
+</ul>
+<dl class="section note"><dt>Nota</dt><dd>Complexidade das buscas:<ul>
+<li>Vetor (busca binária): O(log n)</li>
+<li>Árvore Binária: O(log n) no melhor caso, O(n) no pior caso</li>
+<li>Árvore AVL: O(log n) garantido</li>
+</ul>
+</dd>
+<dd>
+A função assume que o vetor está ordenado para busca binária. Se não estiver ordenado, a busca no vetor pode retornar resultados incorretos.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>A função não valida se o repositório foi inicializado corretamente ou se as estruturas de dados estão em um estado válido. </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a23">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00285">285</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="a669caf6c704193af451b45d7ad19a7e6" name="a669caf6c704193af451b45d7ad19a7e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669caf6c704193af451b45d7ad19a7e6">&#9670;&#160;</a></span>search_by_frequency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void search_by_frequency </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRepository.html">Repository</a> *</td>          <td class="paramname"><span class="paramname"><em>repo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>min_frequency</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca palavras por frequência mínima. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">repo</td><td>Repositório onde buscar </td></tr>
+    <tr><td class="paramname">min_frequency</td><td>Frequência mínima desejada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a30">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00348">348</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="a28bb13d6eb9abc6a3f50c7f3de3280aa" name="a28bb13d6eb9abc6a3f50c7f3de3280aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bb13d6eb9abc6a3f50c7f3de3280aa">&#9670;&#160;</a></span>print_word_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_word_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWordInfo.html">WordInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>info</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime informações de uma palavra. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>Informações da palavra a ser impressa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a33">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00387">387</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="ac764dcb3addb7e5d48d0f991d77dc1e8" name="ac764dcb3addb7e5d48d0f991d77dc1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac764dcb3addb7e5d48d0f991d77dc1e8">&#9670;&#160;</a></span>print_search_results()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_search_results </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>word</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWordInfo.html">WordInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>vector_result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWordInfo.html">WordInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>bst_result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWordInfo.html">WordInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>avl_result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>vector_time</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>bst_time</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>avl_time</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime resultados de busca em todas as estruturas. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">word</td><td>Palavra buscada </td></tr>
+    <tr><td class="paramname">vector_result</td><td>Resultado no vetor </td></tr>
+    <tr><td class="paramname">bst_result</td><td>Resultado na árvore binária </td></tr>
+    <tr><td class="paramname">avl_result</td><td>Resultado na árvore AVL </td></tr>
+    <tr><td class="paramname">vector_time</td><td>Tempo de busca no vetor </td></tr>
+    <tr><td class="paramname">bst_time</td><td>Tempo de busca na árvore binária </td></tr>
+    <tr><td class="paramname">avl_time</td><td>Tempo de busca na árvore AVL </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a28">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00445">445</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="af67480724089637b55a8148566870f16" name="af67480724089637b55a8148566870f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af67480724089637b55a8148566870f16">&#9670;&#160;</a></span>show_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void show_menu </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exibe o menu principal do sistema. </p>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a34">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00501">501</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="a3c3453595506a46bc4d0ad3602b066db" name="a3c3453595506a46bc4d0ad3602b066db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3453595506a46bc4d0ad3602b066db">&#9670;&#160;</a></span>load_files_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void load_files_menu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRepository.html">Repository</a> *</td>          <td class="paramname"><span class="paramname"><em>repo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Menu para carregar arquivos de música. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">repo</td><td>Repositório onde carregar os arquivos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a35">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00542">542</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="a0fd8b45fcff008877d963862e9bc1312" name="a0fd8b45fcff008877d963862e9bc1312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd8b45fcff008877d963862e9bc1312">&#9670;&#160;</a></span>search_word_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void search_word_menu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRepository.html">Repository</a> *</td>          <td class="paramname"><span class="paramname"><em>repo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Menu para buscar palavras. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">repo</td><td>Repositório onde buscar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a37">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00586">586</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="ab0544503969832211ae7025dd243b862" name="ab0544503969832211ae7025dd243b862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0544503969832211ae7025dd243b862">&#9670;&#160;</a></span>search_frequency_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void search_frequency_menu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRepository.html">Repository</a> *</td>          <td class="paramname"><span class="paramname"><em>repo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Menu para buscar por frequência. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">repo</td><td>Repositório onde buscar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a38">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00622">622</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="a50ba20cf0b729865ebdadefb8558c4ed" name="a50ba20cf0b729865ebdadefb8558c4ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ba20cf0b729865ebdadefb8558c4ed">&#9670;&#160;</a></span>create_repository()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structRepository.html">Repository</a> * create_repository </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria um novo repositório. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Ponteiro para o repositório criado ou NULL se falhar </dd></dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a39">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00663">663</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+<a id="a1f80ae6ee651e8085115bb2575b415a4" name="a1f80ae6ee651e8085115bb2575b415a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f80ae6ee651e8085115bb2575b415a4">&#9670;&#160;</a></span>free_repository()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void free_repository </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structRepository.html">Repository</a> *</td>          <td class="paramname"><span class="paramname"><em>repo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libera a memória de um repositório. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">repo</td><td>Repositório a ser liberado </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section examples"><dt>Exemplos</dt><dd><a class="el" href="C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html#a44">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</a>.</dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="repository_8c_source.html#l00708">708</a> do ficheiro <a class="el" href="repository_8c_source.html">repository.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a href="repository_8c.html">repository.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

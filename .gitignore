@@ -1,0 +1,17 @@
+# Arquivos binários
+*.exe
+*.o
+*.obj
+
+# Pasta de build
+build/
+
+# Executável principal
+repositorio_musicas
+repositorio_musicas.exe
+
+# Arquivos objeto antigos
+main.o
+repository.o
+tree.o
+vector.o

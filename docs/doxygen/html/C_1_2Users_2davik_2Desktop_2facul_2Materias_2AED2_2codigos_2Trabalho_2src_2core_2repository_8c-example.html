@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Repositório de Letras de Músicas: C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Repositório de Letras de Músicas<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema de repositório de letras de músicas implementado em C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('C_1_2Users_2davik_2Desktop_2facul_2Materias_2AED2_2codigos_2Trabalho_2src_2core_2repository_8c-example.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">C:/Users/davik/Desktop/facul/Materias/AED2/codigos/Trabalho/src/core/repository.c</div></div>
+</div><!--header-->
+<div class="contents">
+<p>Limpa uma palavra removendo pontuação e convertendo para minúsculo.</p>
+<p>Limpa uma palavra removendo pontuação e convertendo para minúsculo</p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">word</td><td>Palavra a ser limpa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Palavra limpa ou NULL se falhar</dd></dl>
+<p>Remove caracteres de pontuação do início e fim da palavra, converte todos os caracteres para minúsculo e retorna uma nova string. A função usa isalpha() para identificar caracteres alfabéticos e memmove() para remover pontuação do início da string.</p>
+<dl class="section note"><dt>Nota</dt><dd>Esta função é essencial para o processamento de palavras do repositório, garantindo consistência na comparação e armazenamento.</dd></dl>
+<div class="fragment"><div class="line"><span class="keywordtype">char</span> *cleaned = <a id="a0" name="a0"></a><a class="code hl_function" href="repository_8c.html#ad178a03c14853e03e13b4a3424d44ea5">clean_word</a>(<span class="stringliteral">&quot;Hello, World!&quot;</span>);</div>
+<div class="line"><span class="comment">// Resultado: &quot;hello world&quot;</span></div>
+<div class="ttc" id="arepository_8c_html_ad178a03c14853e03e13b4a3424d44ea5"><div class="ttname"><a href="repository_8c.html#ad178a03c14853e03e13b4a3424d44ea5">clean_word</a></div><div class="ttdeci">char * clean_word(const char *word)</div><div class="ttdoc">Limpa uma palavra removendo pontuação e convertendo para minúsculo.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00059">repository.c:59</a></div></div>
+</div><!-- fragment --><div class="fragment"><div class="line"></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &quot;../../include/core/repository.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;ctype.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">char</span>* <a id="a1" name="a1"></a><a class="code hl_function" href="repository_8c.html#a3b9bb1d40f071b19cd04812610fa4919">to_lowercase</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str) {</div>
+<div class="line">    <span class="keywordflow">if</span> (str == NULL) <span class="keywordflow">return</span> NULL;</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordtype">char</span> *result = strdup(str);</div>
+<div class="line">    <span class="keywordflow">if</span> (result == NULL) <span class="keywordflow">return</span> NULL;</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; result[i]; i++) {</div>
+<div class="line">        result[i] = tolower(result[i]);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> result;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">char</span>* <a class="code hl_function" href="repository_8c.html#ad178a03c14853e03e13b4a3424d44ea5">clean_word</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *word) {</div>
+<div class="line">    <span class="keywordflow">if</span> (word == NULL) <span class="keywordflow">return</span> NULL;</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordtype">char</span> *cleaned = strdup(word);</div>
+<div class="line">    <span class="keywordflow">if</span> (cleaned == NULL) <span class="keywordflow">return</span> NULL;</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">while</span> (*cleaned &amp;&amp; !isalpha(*cleaned)) {</div>
+<div class="line">        memmove(cleaned, cleaned + 1, strlen(cleaned));</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">int</span> len = strlen(cleaned);</div>
+<div class="line">    <span class="keywordflow">while</span> (len &gt; 0 &amp;&amp; !isalpha(cleaned[len - 1])) {</div>
+<div class="line">        cleaned[--len] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; cleaned[i]; i++) {</div>
+<div class="line">        cleaned[i] = tolower(cleaned[i]);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">return</span> cleaned;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a2" name="a2"></a><a class="code hl_function" href="repository_8c.html#a6c4680f12603e2d76a094a309971f295">process_line_and_insert_words</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *line) {</div>
+<div class="line">  <span class="keywordtype">char</span> *line_copy = strdup(line);</div>
+<div class="line">  <span class="keywordflow">if</span> (line_copy == NULL) {</div>
+<div class="line">    fprintf(stderr, <span class="stringliteral">&quot;Erro de alocação de memória.&quot;</span>);</div>
+<div class="line">    exit(EXIT_FAILURE);</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordtype">char</span> *token = strtok(line_copy, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">while</span> (token != NULL) {</div>
+<div class="line">    <span class="keywordflow">if</span> (strlen(token) &gt;= 3) {</div>
+<div class="line"> </div>
+<div class="line">      <a id="_a3" name="_a3"></a><a class="code hl_typedef" href="tree_8h.html#ac09cf950484bd9550d14d602b0e5e7fb">Node</a> *bst_node = <a id="a4" name="a4"></a><a class="code hl_function" href="tree_8c.html#ad5efb4871f3c6dfad903e939e5f22fc1">create_node</a>(token);</div>
+<div class="line">      <span class="keywordflow">if</span> (bst_node != NULL)</div>
+<div class="line">        <a id="a5" name="a5"></a><a class="code hl_function" href="tree_8c.html#a4411fbf3ed35a0f1f1765d4b48fd8928">insert_node</a>(bst_node);</div>
+<div class="line"> </div>
+<div class="line">      <a class="code hl_typedef" href="tree_8h.html#ac09cf950484bd9550d14d602b0e5e7fb">Node</a> *avl_node = <a class="code hl_function" href="tree_8c.html#ad5efb4871f3c6dfad903e939e5f22fc1">create_node</a>(token);</div>
+<div class="line">      <span class="keywordflow">if</span> (avl_node != NULL)</div>
+<div class="line">        <a id="a6" name="a6"></a><a class="code hl_function" href="tree_8c.html#a8a98038351f534e852655c25ab0cb28a">insert_node_avl</a>(avl_node);</div>
+<div class="line">    }</div>
+<div class="line">    token = strtok(NULL, <span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line">  }</div>
+<div class="line">  free(line_copy);</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a7" name="a7"></a><a class="code hl_function" href="repository_8c.html#af2d2b2f5146636212bfb4f128ec111a9">process_music_file_for_word_count</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filepath) {</div>
+<div class="line">  FILE *file = fopen(filepath, <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line">  <span class="keywordflow">if</span> (file == NULL) {</div>
+<div class="line">    perror(<span class="stringliteral">&quot;Erro ao abrir o arquivo&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">  }</div>
+<div class="line">  <span class="keywordtype">char</span> line_buffer[256];</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">if</span> (fgets(line_buffer, <span class="keyword">sizeof</span>(line_buffer), file) == NULL) {</div>
+<div class="line">    line_buffer[strcspn(line_buffer, <span class="stringliteral">&quot;\n&quot;</span>)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line">    <a class="code hl_function" href="repository_8c.html#a6c4680f12603e2d76a094a309971f295">process_line_and_insert_words</a>(line_buffer);</div>
+<div class="line">    fclose(file);</div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">if</span> (fgets(line_buffer, <span class="keyword">sizeof</span>(line_buffer), file) == NULL) {</div>
+<div class="line">    fclose(file);</div>
+<div class="line">    <span class="keywordflow">return</span>;</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">while</span> (fgets(line_buffer, <span class="keyword">sizeof</span>(line_buffer), file) != NULL) {</div>
+<div class="line">    line_buffer[strcspn(line_buffer, <span class="stringliteral">&quot;\n&quot;</span>)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line">    <a class="code hl_function" href="repository_8c.html#a6c4680f12603e2d76a094a309971f295">process_line_and_insert_words</a>(line_buffer);</div>
+<div class="line">  }</div>
+<div class="line">  fclose(file);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a8" name="a8"></a><a class="code hl_function" href="repository_8c.html#a23eb96b0f7939d5d51881bd66a93a49e">process_music_file_complete</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filepath, <a id="_a9" name="_a9"></a><a class="code hl_struct" href="structRepository.html">Repository</a> *repo) {</div>
+<div class="line">    FILE *file = fopen(filepath, <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">if</span> (file == NULL) {</div>
+<div class="line">        perror(<span class="stringliteral">&quot;Erro ao abrir o arquivo&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordtype">char</span> line_buffer[1024];</div>
+<div class="line">    <span class="keywordtype">char</span> title[256] = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> author[256] = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line">    <span class="keywordtype">char</span> current_verse[1024] = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (fgets(line_buffer, <span class="keyword">sizeof</span>(line_buffer), file) != NULL) {</div>
+<div class="line">        line_buffer[strcspn(line_buffer, <span class="stringliteral">&quot;\n&quot;</span>)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line">        strcpy(title, line_buffer);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (fgets(line_buffer, <span class="keyword">sizeof</span>(line_buffer), file) != NULL) {</div>
+<div class="line">        line_buffer[strcspn(line_buffer, <span class="stringliteral">&quot;\n&quot;</span>)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line">        strcpy(author, line_buffer);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">while</span> (fgets(line_buffer, <span class="keyword">sizeof</span>(line_buffer), file) != NULL) {</div>
+<div class="line">        line_buffer[strcspn(line_buffer, <span class="stringliteral">&quot;\n&quot;</span>)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line">        strcpy(current_verse, line_buffer);</div>
+<div class="line">        </div>
+<div class="line">        <span class="keywordtype">char</span> *line_copy = strdup(line_buffer);</div>
+<div class="line">        <span class="keywordflow">if</span> (line_copy == NULL) <span class="keywordflow">continue</span>;</div>
+<div class="line">        </div>
+<div class="line">        <span class="keywordtype">char</span> *token = strtok(line_copy, <span class="stringliteral">&quot; \t\n&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">while</span> (token != NULL) {</div>
+<div class="line">            <span class="keywordtype">char</span> *cleaned_word = <a class="code hl_function" href="repository_8c.html#ad178a03c14853e03e13b4a3424d44ea5">clean_word</a>(token);</div>
+<div class="line">            <span class="keywordflow">if</span> (cleaned_word != NULL &amp;&amp; strlen(cleaned_word) &gt;= 4) {</div>
+<div class="line"> </div>
+<div class="line">                <a id="_a10" name="_a10"></a><a class="code hl_struct" href="structWordInfo.html">WordInfo</a> *info = malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structWordInfo.html">WordInfo</a>));</div>
+<div class="line">                <span class="keywordflow">if</span> (info != NULL) {</div>
+<div class="line">                    info-&gt;<a id="a11" name="a11"></a><a class="code hl_variable" href="structWordInfo.html#aab6515c798be12941e9d05e180a53adc">word</a> = strdup(cleaned_word);</div>
+<div class="line">                    info-&gt;<a id="a12" name="a12"></a><a class="code hl_variable" href="structWordInfo.html#ac6c01e913346455cf59d7c25fb6dfc55">title</a> = strdup(title);</div>
+<div class="line">                    info-&gt;<a id="a13" name="a13"></a><a class="code hl_variable" href="structWordInfo.html#a59c97bda62f8e70c2ecd35b0c38d5ff8">author</a> = strdup(author);</div>
+<div class="line">                    info-&gt;<a id="a14" name="a14"></a><a class="code hl_variable" href="structWordInfo.html#ac38396b2f1a7074ddcac57364742bb35">verse_snippet</a> = strdup(current_verse);</div>
+<div class="line">                    info-&gt;<a id="a15" name="a15"></a><a class="code hl_variable" href="structWordInfo.html#a1f751d6fb89e40651ac2cbf312e34580">frequency_in_song</a> = 1;</div>
+<div class="line">                    info-&gt;<a id="a16" name="a16"></a><a class="code hl_variable" href="structWordInfo.html#a4b985b3b626a312e8f70edcb402028b8">total_frequency</a> = 1;</div>
+<div class="line">                    </div>
+<div class="line"> </div>
+<div class="line">                    <a id="a17" name="a17"></a><a class="code hl_function" href="vector_8c.html#a9aea6032f8988c3f8189e9f9a130ff54">insert_word_vector</a>(repo-&gt;<a id="a18" name="a18"></a><a class="code hl_variable" href="structRepository.html#a9ddb4fdf1b30c3df975953f262eeba4a">word_vector</a>, cleaned_word, title, author, current_verse, 1);</div>
+<div class="line">                    <a id="a19" name="a19"></a><a class="code hl_function" href="tree_8c.html#aee3e30b776cf027f20fb6565a161d858">insert_node_complete_bst</a>(repo-&gt;<a id="a20" name="a20"></a><a class="code hl_variable" href="structRepository.html#a5d5920c11041de68f86e8b58e7a94ad1">bst_complete</a>, info);</div>
+<div class="line">                    <a id="a21" name="a21"></a><a class="code hl_function" href="tree_8c.html#ac34d6db0f3ebe68cd3fedb2c967b51bb">insert_node_complete_avl</a>(repo-&gt;<a id="a22" name="a22"></a><a class="code hl_variable" href="structRepository.html#a3c4f6648003947fe3e2684a68599a957">avl_complete</a>, info);</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">            free(cleaned_word);</div>
+<div class="line">            token = strtok(NULL, <span class="stringliteral">&quot; \t\n&quot;</span>);</div>
+<div class="line">        }</div>
+<div class="line">        free(line_copy);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    fclose(file);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a23" name="a23"></a><a class="code hl_function" href="repository_8c.html#a2ee4c47764ac9386c51dfb36bc45ffce">search_word_in_all_structures</a>(<a class="code hl_struct" href="structRepository.html">Repository</a> *repo, <span class="keyword">const</span> <span class="keywordtype">char</span> *word) {</div>
+<div class="line">    <span class="keywordflow">if</span> (repo == NULL || word == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordtype">char</span> *cleaned_word = <a class="code hl_function" href="repository_8c.html#ad178a03c14853e03e13b4a3424d44ea5">clean_word</a>(word);</div>
+<div class="line">    <span class="keywordflow">if</span> (cleaned_word == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line">    </div>
+<div class="line">    clock_t start, end;</div>
+<div class="line">    <span class="keywordtype">double</span> vector_time, bst_time, avl_time;</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    start = clock();</div>
+<div class="line">    <a class="code hl_struct" href="structWordInfo.html">WordInfo</a> *vector_result = <a id="a24" name="a24"></a><a class="code hl_function" href="vector_8c.html#a35bc0bd41756eac44ddb7371fb376cd6">search_word_vector</a>(repo-&gt;<a class="code hl_variable" href="structRepository.html#a9ddb4fdf1b30c3df975953f262eeba4a">word_vector</a>, cleaned_word);</div>
+<div class="line">    end = clock();</div>
+<div class="line">    vector_time = ((double)(end - start)) / CLOCKS_PER_SEC;</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    start = clock();</div>
+<div class="line">    <a id="_a25" name="_a25"></a><a class="code hl_typedef" href="tree_8h.html#a178099a3df9019a62285e77205ef33f0">NodeComplete</a> *bst_result = <a id="a26" name="a26"></a><a class="code hl_function" href="tree_8c.html#a1cdd8b3d57de4982801fa6a8fee84100">search_tree_complete</a>(repo-&gt;<a class="code hl_variable" href="structRepository.html#a5d5920c11041de68f86e8b58e7a94ad1">bst_complete</a>-&gt;<a id="a27" name="a27"></a><a class="code hl_variable" href="structTreeComplete.html#a25136a361afe0b86bf28dd96dca747cc">root</a>, cleaned_word);</div>
+<div class="line">    end = clock();</div>
+<div class="line">    bst_time = ((double)(end - start)) / CLOCKS_PER_SEC;</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    start = clock();</div>
+<div class="line">    <a class="code hl_typedef" href="tree_8h.html#a178099a3df9019a62285e77205ef33f0">NodeComplete</a> *avl_result = <a class="code hl_function" href="tree_8c.html#a1cdd8b3d57de4982801fa6a8fee84100">search_tree_complete</a>(repo-&gt;<a class="code hl_variable" href="structRepository.html#a3c4f6648003947fe3e2684a68599a957">avl_complete</a>-&gt;<a class="code hl_variable" href="structTreeComplete.html#a25136a361afe0b86bf28dd96dca747cc">root</a>, cleaned_word);</div>
+<div class="line">    end = clock();</div>
+<div class="line">    avl_time = ((double)(end - start)) / CLOCKS_PER_SEC;</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <a id="a28" name="a28"></a><a class="code hl_function" href="repository_8c.html#ac764dcb3addb7e5d48d0f991d77dc1e8">print_search_results</a>(cleaned_word, vector_result, </div>
+<div class="line">                        bst_result ? bst_result-&gt;<a id="a29" name="a29"></a><a class="code hl_variable" href="structnode__complete.html#aef1c18a84e114da4343e0d37e6a440c0">info</a> : NULL,</div>
+<div class="line">                        avl_result ? avl_result-&gt;<a class="code hl_variable" href="structnode__complete.html#aef1c18a84e114da4343e0d37e6a440c0">info</a> : NULL,</div>
+<div class="line">                        vector_time, bst_time, avl_time);</div>
+<div class="line">    </div>
+<div class="line">    free(cleaned_word);</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a30" name="a30"></a><a class="code hl_function" href="repository_8c.html#a669caf6c704193af451b45d7ad19a7e6">search_by_frequency</a>(<a class="code hl_struct" href="structRepository.html">Repository</a> *repo, <span class="keywordtype">int</span> min_frequency) {</div>
+<div class="line">    <span class="keywordflow">if</span> (repo == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line">    </div>
+<div class="line">    printf(<span class="stringliteral">&quot;\n=== Palavras com frequência &gt;= %d ===\n&quot;</span>, min_frequency);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Busca no vetor:\n&quot;</span>);</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; repo-&gt;<a class="code hl_variable" href="structRepository.html#a9ddb4fdf1b30c3df975953f262eeba4a">word_vector</a>-&gt;<a id="a31" name="a31"></a><a class="code hl_variable" href="structVector.html#ae13c6e730a6558ba444beb8f7e44d4ca">size</a>; i++) {</div>
+<div class="line">        <span class="keywordflow">if</span> (repo-&gt;<a class="code hl_variable" href="structRepository.html#a9ddb4fdf1b30c3df975953f262eeba4a">word_vector</a>-&gt;<a id="a32" name="a32"></a><a class="code hl_variable" href="structVector.html#aa271b41a3367adeb4b6e6ee6871739f6">words</a>[i].<a class="code hl_variable" href="structWordInfo.html#a4b985b3b626a312e8f70edcb402028b8">total_frequency</a> &gt;= min_frequency) {</div>
+<div class="line">            <a id="a33" name="a33"></a><a class="code hl_function" href="repository_8c.html#a28bb13d6eb9abc6a3f50c7f3de3280aa">print_word_info</a>(&amp;repo-&gt;<a class="code hl_variable" href="structRepository.html#a9ddb4fdf1b30c3df975953f262eeba4a">word_vector</a>-&gt;<a class="code hl_variable" href="structVector.html#aa271b41a3367adeb4b6e6ee6871739f6">words</a>[i]);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="repository_8c.html#a28bb13d6eb9abc6a3f50c7f3de3280aa">print_word_info</a>(<a class="code hl_struct" href="structWordInfo.html">WordInfo</a> *info) {</div>
+<div class="line">    <span class="keywordflow">if</span> (info == NULL) {</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Palavra não encontrada.\n&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">return</span>;</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    printf(<span class="stringliteral">&quot;Palavra: %s\n&quot;</span>, info-&gt;<a class="code hl_variable" href="structWordInfo.html#aab6515c798be12941e9d05e180a53adc">word</a>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Música: %s\n&quot;</span>, info-&gt;<a class="code hl_variable" href="structWordInfo.html#ac6c01e913346455cf59d7c25fb6dfc55">title</a>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Autor: %s\n&quot;</span>, info-&gt;<a class="code hl_variable" href="structWordInfo.html#a59c97bda62f8e70c2ecd35b0c38d5ff8">author</a>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Trecho: %s\n&quot;</span>, info-&gt;<a class="code hl_variable" href="structWordInfo.html#ac38396b2f1a7074ddcac57364742bb35">verse_snippet</a>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Frequência na música: %d\n&quot;</span>, info-&gt;<a class="code hl_variable" href="structWordInfo.html#a1f751d6fb89e40651ac2cbf312e34580">frequency_in_song</a>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Frequência total: %d\n&quot;</span>, info-&gt;<a class="code hl_variable" href="structWordInfo.html#a4b985b3b626a312e8f70edcb402028b8">total_frequency</a>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;---\n&quot;</span>);</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="repository_8c.html#ac764dcb3addb7e5d48d0f991d77dc1e8">print_search_results</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *word, <a class="code hl_struct" href="structWordInfo.html">WordInfo</a> *vector_result, </div>
+<div class="line">                         <a class="code hl_struct" href="structWordInfo.html">WordInfo</a> *bst_result, <a class="code hl_struct" href="structWordInfo.html">WordInfo</a> *avl_result,</div>
+<div class="line">                         <span class="keywordtype">double</span> vector_time, <span class="keywordtype">double</span> bst_time, <span class="keywordtype">double</span> avl_time) {</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\n=== Resultados da busca para &#39;%s&#39; ===\n&quot;</span>, word);</div>
+<div class="line">    </div>
+<div class="line">    printf(<span class="stringliteral">&quot;\n1. Vetor (Busca Binária):\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Tempo: %.6f segundos\n&quot;</span>, vector_time);</div>
+<div class="line">    <span class="keywordflow">if</span> (vector_result) {</div>
+<div class="line">        <a class="code hl_function" href="repository_8c.html#a28bb13d6eb9abc6a3f50c7f3de3280aa">print_word_info</a>(vector_result);</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Palavra não encontrada.\n&quot;</span>);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    printf(<span class="stringliteral">&quot;\n2. Árvore Binária de Busca:\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Tempo: %.6f segundos\n&quot;</span>, bst_time);</div>
+<div class="line">    <span class="keywordflow">if</span> (bst_result) {</div>
+<div class="line">        <a class="code hl_function" href="repository_8c.html#a28bb13d6eb9abc6a3f50c7f3de3280aa">print_word_info</a>(bst_result);</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Palavra não encontrada.\n&quot;</span>);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    printf(<span class="stringliteral">&quot;\n3. Árvore AVL:\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Tempo: %.6f segundos\n&quot;</span>, avl_time);</div>
+<div class="line">    <span class="keywordflow">if</span> (avl_result) {</div>
+<div class="line">        <a class="code hl_function" href="repository_8c.html#a28bb13d6eb9abc6a3f50c7f3de3280aa">print_word_info</a>(avl_result);</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Palavra não encontrada.\n&quot;</span>);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a34" name="a34"></a><a class="code hl_function" href="repository_8c.html#af67480724089637b55a8148566870f16">show_menu</a>() {</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\n=== REPOSITÓRIO DE LETRAS DE MÚSICAS ===\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;1. Carregar arquivos .txt\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;2. Buscar palavra\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;3. Buscar por frequência\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;4. Sair\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Escolha uma opção: &quot;</span>);</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a35" name="a35"></a><a class="code hl_function" href="repository_8c.html#a3c3453595506a46bc4d0ad3602b066db">load_files_menu</a>(<a class="code hl_struct" href="structRepository.html">Repository</a> *repo) {</div>
+<div class="line">    <span class="keywordtype">char</span> filename[256];</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Digite o nome do arquivo .txt: &quot;</span>);</div>
+<div class="line">    scanf(<span class="stringliteral">&quot;%s&quot;</span>, filename);</div>
+<div class="line">    </div>
+<div class="line">    clock_t start = clock();</div>
+<div class="line">    <a class="code hl_function" href="repository_8c.html#a23eb96b0f7939d5d51881bd66a93a49e">process_music_file_complete</a>(filename, repo);</div>
+<div class="line">    clock_t end = clock();</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordtype">double</span> time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Arquivo carregado em %.6f segundos\n&quot;</span>, time_taken);</div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    <a id="a36" name="a36"></a><a class="code hl_function" href="vector_8c.html#a040ef05b6410282188721fd6c30dfe0c">sort_vector</a>(repo-&gt;<a class="code hl_variable" href="structRepository.html#a9ddb4fdf1b30c3df975953f262eeba4a">word_vector</a>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Vetor ordenado para busca binária.\n&quot;</span>);</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a37" name="a37"></a><a class="code hl_function" href="repository_8c.html#a0fd8b45fcff008877d963862e9bc1312">search_word_menu</a>(<a class="code hl_struct" href="structRepository.html">Repository</a> *repo) {</div>
+<div class="line">    <span class="keywordtype">char</span> word[100];</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Digite a palavra a ser buscada: &quot;</span>);</div>
+<div class="line">    scanf(<span class="stringliteral">&quot;%s&quot;</span>, word);</div>
+<div class="line">    </div>
+<div class="line">    <a class="code hl_function" href="repository_8c.html#a2ee4c47764ac9386c51dfb36bc45ffce">search_word_in_all_structures</a>(repo, word);</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a38" name="a38"></a><a class="code hl_function" href="repository_8c.html#ab0544503969832211ae7025dd243b862">search_frequency_menu</a>(<a class="code hl_struct" href="structRepository.html">Repository</a> *repo) {</div>
+<div class="line">    <span class="keywordtype">int</span> frequency;</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Digite a frequência mínima: &quot;</span>);</div>
+<div class="line">    scanf(<span class="stringliteral">&quot;%d&quot;</span>, &amp;frequency);</div>
+<div class="line">    </div>
+<div class="line">    <a class="code hl_function" href="repository_8c.html#a669caf6c704193af451b45d7ad19a7e6">search_by_frequency</a>(repo, frequency);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"></div>
+<div class="line"><a class="code hl_struct" href="structRepository.html">Repository</a>* <a id="a39" name="a39"></a><a class="code hl_function" href="repository_8c.html#a50ba20cf0b729865ebdadefb8558c4ed">create_repository</a>() {</div>
+<div class="line">    <a class="code hl_struct" href="structRepository.html">Repository</a> *repo = (<a class="code hl_struct" href="structRepository.html">Repository</a>*)malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structRepository.html">Repository</a>));</div>
+<div class="line">    <span class="keywordflow">if</span> (repo == NULL) <span class="keywordflow">return</span> NULL;</div>
+<div class="line">    </div>
+<div class="line">    repo-&gt;<a class="code hl_variable" href="structRepository.html#a9ddb4fdf1b30c3df975953f262eeba4a">word_vector</a> = <a id="a40" name="a40"></a><a class="code hl_function" href="vector_8c.html#abc8b3afaf6222e229bebe8c8ebf9ecc8">create_vector</a>(100);</div>
+<div class="line">    repo-&gt;<a class="code hl_variable" href="structRepository.html#a5d5920c11041de68f86e8b58e7a94ad1">bst_complete</a> = (<a id="_a41" name="_a41"></a><a class="code hl_struct" href="structTreeComplete.html">TreeComplete</a>*)malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structTreeComplete.html">TreeComplete</a>));</div>
+<div class="line">    repo-&gt;<a class="code hl_variable" href="structRepository.html#a3c4f6648003947fe3e2684a68599a957">avl_complete</a> = (<a class="code hl_struct" href="structTreeComplete.html">TreeComplete</a>*)malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structTreeComplete.html">TreeComplete</a>));</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">if</span> (repo-&gt;<a class="code hl_variable" href="structRepository.html#a5d5920c11041de68f86e8b58e7a94ad1">bst_complete</a>) repo-&gt;<a class="code hl_variable" href="structRepository.html#a5d5920c11041de68f86e8b58e7a94ad1">bst_complete</a>-&gt;<a class="code hl_variable" href="structTreeComplete.html#a25136a361afe0b86bf28dd96dca747cc">root</a> = NULL;</div>
+<div class="line">    <span class="keywordflow">if</span> (repo-&gt;<a class="code hl_variable" href="structRepository.html#a3c4f6648003947fe3e2684a68599a957">avl_complete</a>) repo-&gt;<a class="code hl_variable" href="structRepository.html#a3c4f6648003947fe3e2684a68599a957">avl_complete</a>-&gt;<a class="code hl_variable" href="structTreeComplete.html#a25136a361afe0b86bf28dd96dca747cc">root</a> = NULL;</div>
+<div class="line">    </div>
+<div class="line">    repo-&gt;<a id="a42" name="a42"></a><a class="code hl_variable" href="structRepository.html#a1e05e73c7d1850555cac61aea7086bfc">songs</a> = NULL;</div>
+<div class="line">    repo-&gt;<a id="a43" name="a43"></a><a class="code hl_variable" href="structRepository.html#ae8d620304f0e2ad150728363d6c693de">num_songs</a> = 0;</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">return</span> repo;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> <a id="a44" name="a44"></a><a class="code hl_function" href="repository_8c.html#a1f80ae6ee651e8085115bb2575b415a4">free_repository</a>(<a class="code hl_struct" href="structRepository.html">Repository</a> *repo) {</div>
+<div class="line">    <span class="keywordflow">if</span> (repo == NULL) <span class="keywordflow">return</span>;</div>
+<div class="line">    </div>
+<div class="line">    <a id="a45" name="a45"></a><a class="code hl_function" href="vector_8c.html#a198417967ef24ada410abbb475e6966d">free_vector</a>(repo-&gt;<a class="code hl_variable" href="structRepository.html#a9ddb4fdf1b30c3df975953f262eeba4a">word_vector</a>);</div>
+<div class="line"> </div>
+<div class="line">    free(repo-&gt;<a class="code hl_variable" href="structRepository.html#a5d5920c11041de68f86e8b58e7a94ad1">bst_complete</a>);</div>
+<div class="line">    free(repo-&gt;<a class="code hl_variable" href="structRepository.html#a3c4f6648003947fe3e2684a68599a957">avl_complete</a>);</div>
+<div class="line">    free(repo);</div>
+<div class="line">}</div>
+<div class="ttc" id="arepository_8c_html_a0fd8b45fcff008877d963862e9bc1312"><div class="ttname"><a href="repository_8c.html#a0fd8b45fcff008877d963862e9bc1312">search_word_menu</a></div><div class="ttdeci">void search_word_menu(Repository *repo)</div><div class="ttdoc">Menu para buscar palavras.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00586">repository.c:586</a></div></div>
+<div class="ttc" id="arepository_8c_html_a1f80ae6ee651e8085115bb2575b415a4"><div class="ttname"><a href="repository_8c.html#a1f80ae6ee651e8085115bb2575b415a4">free_repository</a></div><div class="ttdeci">void free_repository(Repository *repo)</div><div class="ttdoc">Libera a memória de um repositório.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00708">repository.c:708</a></div></div>
+<div class="ttc" id="arepository_8c_html_a23eb96b0f7939d5d51881bd66a93a49e"><div class="ttname"><a href="repository_8c.html#a23eb96b0f7939d5d51881bd66a93a49e">process_music_file_complete</a></div><div class="ttdeci">void process_music_file_complete(const char *filepath, Repository *repo)</div><div class="ttdoc">Processa arquivo de música completo com todas as informações.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00194">repository.c:194</a></div></div>
+<div class="ttc" id="arepository_8c_html_a28bb13d6eb9abc6a3f50c7f3de3280aa"><div class="ttname"><a href="repository_8c.html#a28bb13d6eb9abc6a3f50c7f3de3280aa">print_word_info</a></div><div class="ttdeci">void print_word_info(WordInfo *info)</div><div class="ttdoc">Imprime informações de uma palavra.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00387">repository.c:387</a></div></div>
+<div class="ttc" id="arepository_8c_html_a2ee4c47764ac9386c51dfb36bc45ffce"><div class="ttname"><a href="repository_8c.html#a2ee4c47764ac9386c51dfb36bc45ffce">search_word_in_all_structures</a></div><div class="ttdeci">void search_word_in_all_structures(Repository *repo, const char *word)</div><div class="ttdoc">Busca uma palavra em todas as estruturas de dados.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00285">repository.c:285</a></div></div>
+<div class="ttc" id="arepository_8c_html_a3b9bb1d40f071b19cd04812610fa4919"><div class="ttname"><a href="repository_8c.html#a3b9bb1d40f071b19cd04812610fa4919">to_lowercase</a></div><div class="ttdeci">char * to_lowercase(const char *str)</div><div class="ttdoc">Converte uma string para minúsculo.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00029">repository.c:29</a></div></div>
+<div class="ttc" id="arepository_8c_html_a3c3453595506a46bc4d0ad3602b066db"><div class="ttname"><a href="repository_8c.html#a3c3453595506a46bc4d0ad3602b066db">load_files_menu</a></div><div class="ttdeci">void load_files_menu(Repository *repo)</div><div class="ttdoc">Menu para carregar arquivos de música.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00542">repository.c:542</a></div></div>
+<div class="ttc" id="arepository_8c_html_a50ba20cf0b729865ebdadefb8558c4ed"><div class="ttname"><a href="repository_8c.html#a50ba20cf0b729865ebdadefb8558c4ed">create_repository</a></div><div class="ttdeci">Repository * create_repository()</div><div class="ttdoc">Cria um novo repositório.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00663">repository.c:663</a></div></div>
+<div class="ttc" id="arepository_8c_html_a669caf6c704193af451b45d7ad19a7e6"><div class="ttname"><a href="repository_8c.html#a669caf6c704193af451b45d7ad19a7e6">search_by_frequency</a></div><div class="ttdeci">void search_by_frequency(Repository *repo, int min_frequency)</div><div class="ttdoc">Busca palavras por frequência mínima.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00348">repository.c:348</a></div></div>
+<div class="ttc" id="arepository_8c_html_a6c4680f12603e2d76a094a309971f295"><div class="ttname"><a href="repository_8c.html#a6c4680f12603e2d76a094a309971f295">process_line_and_insert_words</a></div><div class="ttdeci">void process_line_and_insert_words(const char *line)</div><div class="ttdoc">Processa uma linha e insere palavras nas estruturas básicas.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00097">repository.c:97</a></div></div>
+<div class="ttc" id="arepository_8c_html_ab0544503969832211ae7025dd243b862"><div class="ttname"><a href="repository_8c.html#ab0544503969832211ae7025dd243b862">search_frequency_menu</a></div><div class="ttdeci">void search_frequency_menu(Repository *repo)</div><div class="ttdoc">Menu para buscar por frequência.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00622">repository.c:622</a></div></div>
+<div class="ttc" id="arepository_8c_html_ac764dcb3addb7e5d48d0f991d77dc1e8"><div class="ttname"><a href="repository_8c.html#ac764dcb3addb7e5d48d0f991d77dc1e8">print_search_results</a></div><div class="ttdeci">void print_search_results(const char *word, WordInfo *vector_result, WordInfo *bst_result, WordInfo *avl_result, double vector_time, double bst_time, double avl_time)</div><div class="ttdoc">Imprime resultados de busca em todas as estruturas.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00445">repository.c:445</a></div></div>
+<div class="ttc" id="arepository_8c_html_af2d2b2f5146636212bfb4f128ec111a9"><div class="ttname"><a href="repository_8c.html#af2d2b2f5146636212bfb4f128ec111a9">process_music_file_for_word_count</a></div><div class="ttdeci">void process_music_file_for_word_count(const char *filepath)</div><div class="ttdoc">Processa arquivo de música para contagem de palavras (versão básica)</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00138">repository.c:138</a></div></div>
+<div class="ttc" id="arepository_8c_html_af67480724089637b55a8148566870f16"><div class="ttname"><a href="repository_8c.html#af67480724089637b55a8148566870f16">show_menu</a></div><div class="ttdeci">void show_menu()</div><div class="ttdoc">Exibe o menu principal do sistema.</div><div class="ttdef"><b>Definição</b> <a href="repository_8c_source.html#l00501">repository.c:501</a></div></div>
+<div class="ttc" id="astructRepository_html"><div class="ttname"><a href="structRepository.html">Repository</a></div><div class="ttdoc">Estrutura principal do repositório.</div><div class="ttdef"><b>Definição</b> <a href="repository_8h_source.html#l00032">repository.h:32</a></div></div>
+<div class="ttc" id="astructRepository_html_a1e05e73c7d1850555cac61aea7086bfc"><div class="ttname"><a href="structRepository.html#a1e05e73c7d1850555cac61aea7086bfc">Repository::songs</a></div><div class="ttdeci">Song * songs</div><div class="ttdef"><b>Definição</b> <a href="repository_8h_source.html#l00038">repository.h:38</a></div></div>
+<div class="ttc" id="astructRepository_html_a3c4f6648003947fe3e2684a68599a957"><div class="ttname"><a href="structRepository.html#a3c4f6648003947fe3e2684a68599a957">Repository::avl_complete</a></div><div class="ttdeci">TreeComplete * avl_complete</div><div class="ttdef"><b>Definição</b> <a href="repository_8h_source.html#l00037">repository.h:37</a></div></div>
+<div class="ttc" id="astructRepository_html_a5d5920c11041de68f86e8b58e7a94ad1"><div class="ttname"><a href="structRepository.html#a5d5920c11041de68f86e8b58e7a94ad1">Repository::bst_complete</a></div><div class="ttdeci">TreeComplete * bst_complete</div><div class="ttdef"><b>Definição</b> <a href="repository_8h_source.html#l00036">repository.h:36</a></div></div>
+<div class="ttc" id="astructRepository_html_a9ddb4fdf1b30c3df975953f262eeba4a"><div class="ttname"><a href="structRepository.html#a9ddb4fdf1b30c3df975953f262eeba4a">Repository::word_vector</a></div><div class="ttdeci">Vector * word_vector</div><div class="ttdef"><b>Definição</b> <a href="repository_8h_source.html#l00035">repository.h:35</a></div></div>
+<div class="ttc" id="astructRepository_html_ae8d620304f0e2ad150728363d6c693de"><div class="ttname"><a href="structRepository.html#ae8d620304f0e2ad150728363d6c693de">Repository::num_songs</a></div><div class="ttdeci">int num_songs</div><div class="ttdef"><b>Definição</b> <a href="repository_8h_source.html#l00039">repository.h:39</a></div></div>
+<div class="ttc" id="astructTreeComplete_html"><div class="ttname"><a href="structTreeComplete.html">TreeComplete</a></div><div class="ttdoc">Estrutura para árvore completa.</div><div class="ttdef"><b>Definição</b> <a href="tree_8h_source.html#l00057">tree.h:57</a></div></div>
+<div class="ttc" id="astructTreeComplete_html_a25136a361afe0b86bf28dd96dca747cc"><div class="ttname"><a href="structTreeComplete.html#a25136a361afe0b86bf28dd96dca747cc">TreeComplete::root</a></div><div class="ttdeci">NodeComplete * root</div><div class="ttdef"><b>Definição</b> <a href="tree_8h_source.html#l00058">tree.h:58</a></div></div>
+<div class="ttc" id="astructVector_html_aa271b41a3367adeb4b6e6ee6871739f6"><div class="ttname"><a href="structVector.html#aa271b41a3367adeb4b6e6ee6871739f6">Vector::words</a></div><div class="ttdeci">WordInfo * words</div><div class="ttdef"><b>Definição</b> <a href="llist_8h_source.html#l00028">llist.h:28</a></div></div>
+<div class="ttc" id="astructVector_html_ae13c6e730a6558ba444beb8f7e44d4ca"><div class="ttname"><a href="structVector.html#ae13c6e730a6558ba444beb8f7e44d4ca">Vector::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definição</b> <a href="llist_8h_source.html#l00029">llist.h:29</a></div></div>
+<div class="ttc" id="astructWordInfo_html"><div class="ttname"><a href="structWordInfo.html">WordInfo</a></div><div class="ttdoc">Estrutura para armazenar informações completas de uma palavra.</div><div class="ttdef"><b>Definição</b> <a href="word__info_8h_source.html#l00017">word_info.h:17</a></div></div>
+<div class="ttc" id="astructWordInfo_html_a1f751d6fb89e40651ac2cbf312e34580"><div class="ttname"><a href="structWordInfo.html#a1f751d6fb89e40651ac2cbf312e34580">WordInfo::frequency_in_song</a></div><div class="ttdeci">int frequency_in_song</div><div class="ttdef"><b>Definição</b> <a href="word__info_8h_source.html#l00022">word_info.h:22</a></div></div>
+<div class="ttc" id="astructWordInfo_html_a4b985b3b626a312e8f70edcb402028b8"><div class="ttname"><a href="structWordInfo.html#a4b985b3b626a312e8f70edcb402028b8">WordInfo::total_frequency</a></div><div class="ttdeci">int total_frequency</div><div class="ttdef"><b>Definição</b> <a href="word__info_8h_source.html#l00023">word_info.h:23</a></div></div>
+<div class="ttc" id="astructWordInfo_html_a59c97bda62f8e70c2ecd35b0c38d5ff8"><div class="ttname"><a href="structWordInfo.html#a59c97bda62f8e70c2ecd35b0c38d5ff8">WordInfo::author</a></div><div class="ttdeci">char * author</div><div class="ttdef"><b>Definição</b> <a href="word__info_8h_source.html#l00020">word_info.h:20</a></div></div>
+<div class="ttc" id="astructWordInfo_html_aab6515c798be12941e9d05e180a53adc"><div class="ttname"><a href="structWordInfo.html#aab6515c798be12941e9d05e180a53adc">WordInfo::word</a></div><div class="ttdeci">char * word</div><div class="ttdef"><b>Definição</b> <a href="word__info_8h_source.html#l00018">word_info.h:18</a></div></div>
+<div class="ttc" id="astructWordInfo_html_ac38396b2f1a7074ddcac57364742bb35"><div class="ttname"><a href="structWordInfo.html#ac38396b2f1a7074ddcac57364742bb35">WordInfo::verse_snippet</a></div><div class="ttdeci">char * verse_snippet</div><div class="ttdef"><b>Definição</b> <a href="word__info_8h_source.html#l00021">word_info.h:21</a></div></div>
+<div class="ttc" id="astructWordInfo_html_ac6c01e913346455cf59d7c25fb6dfc55"><div class="ttname"><a href="structWordInfo.html#ac6c01e913346455cf59d7c25fb6dfc55">WordInfo::title</a></div><div class="ttdeci">char * title</div><div class="ttdef"><b>Definição</b> <a href="word__info_8h_source.html#l00019">word_info.h:19</a></div></div>
+<div class="ttc" id="astructnode__complete_html_aef1c18a84e114da4343e0d37e6a440c0"><div class="ttname"><a href="structnode__complete.html#aef1c18a84e114da4343e0d37e6a440c0">node_complete::info</a></div><div class="ttdeci">WordInfo * info</div><div class="ttdef"><b>Definição</b> <a href="tree_8h_source.html#l00048">tree.h:48</a></div></div>
+<div class="ttc" id="atree_8c_html_a1cdd8b3d57de4982801fa6a8fee84100"><div class="ttname"><a href="tree_8c.html#a1cdd8b3d57de4982801fa6a8fee84100">search_tree_complete</a></div><div class="ttdeci">NodeComplete * search_tree_complete(NodeComplete *root, const char *word)</div><div class="ttdoc">Busca uma palavra na árvore completa.</div><div class="ttdef"><b>Definição</b> <a href="tree_8c_source.html#l00394">tree.c:394</a></div></div>
+<div class="ttc" id="atree_8c_html_a4411fbf3ed35a0f1f1765d4b48fd8928"><div class="ttname"><a href="tree_8c.html#a4411fbf3ed35a0f1f1765d4b48fd8928">insert_node</a></div><div class="ttdeci">void insert_node(Node *new_node)</div><div class="ttdoc">Insere um nó na árvore binária de busca.</div><div class="ttdef"><b>Definição</b> <a href="tree_8c_source.html#l00225">tree.c:225</a></div></div>
+<div class="ttc" id="atree_8c_html_a8a98038351f534e852655c25ab0cb28a"><div class="ttname"><a href="tree_8c.html#a8a98038351f534e852655c25ab0cb28a">insert_node_avl</a></div><div class="ttdeci">void insert_node_avl(Node *new_node)</div><div class="ttdoc">Insere um nó na árvore AVL.</div><div class="ttdef"><b>Definição</b> <a href="tree_8c_source.html#l00235">tree.c:235</a></div></div>
+<div class="ttc" id="atree_8c_html_ac34d6db0f3ebe68cd3fedb2c967b51bb"><div class="ttname"><a href="tree_8c.html#ac34d6db0f3ebe68cd3fedb2c967b51bb">insert_node_complete_avl</a></div><div class="ttdeci">void insert_node_complete_avl(TreeComplete *tree, WordInfo *info)</div><div class="ttdoc">Insere um nó na árvore AVL completa.</div><div class="ttdef"><b>Definição</b> <a href="tree_8c_source.html#l00389">tree.c:389</a></div></div>
+<div class="ttc" id="atree_8c_html_ad5efb4871f3c6dfad903e939e5f22fc1"><div class="ttname"><a href="tree_8c.html#ad5efb4871f3c6dfad903e939e5f22fc1">create_node</a></div><div class="ttdeci">Node * create_node(const char *word)</div><div class="ttdoc">Cria um novo nó para árvore básica.</div><div class="ttdef"><b>Definição</b> <a href="tree_8c_source.html#l00065">tree.c:65</a></div></div>
+<div class="ttc" id="atree_8c_html_aee3e30b776cf027f20fb6565a161d858"><div class="ttname"><a href="tree_8c.html#aee3e30b776cf027f20fb6565a161d858">insert_node_complete_bst</a></div><div class="ttdeci">void insert_node_complete_bst(TreeComplete *tree, WordInfo *info)</div><div class="ttdoc">Insere um nó na árvore binária completa.</div><div class="ttdef"><b>Definição</b> <a href="tree_8c_source.html#l00273">tree.c:273</a></div></div>
+<div class="ttc" id="atree_8h_html_a178099a3df9019a62285e77205ef33f0"><div class="ttname"><a href="tree_8h.html#a178099a3df9019a62285e77205ef33f0">NodeComplete</a></div><div class="ttdeci">struct node_complete NodeComplete</div><div class="ttdoc">Estrutura de nó para árvore completa com WordInfo.</div></div>
+<div class="ttc" id="atree_8h_html_ac09cf950484bd9550d14d602b0e5e7fb"><div class="ttname"><a href="tree_8h.html#ac09cf950484bd9550d14d602b0e5e7fb">Node</a></div><div class="ttdeci">struct node Node</div><div class="ttdoc">Estrutura de nó para árvore binária básica.</div></div>
+<div class="ttc" id="avector_8c_html_a040ef05b6410282188721fd6c30dfe0c"><div class="ttname"><a href="vector_8c.html#a040ef05b6410282188721fd6c30dfe0c">sort_vector</a></div><div class="ttdeci">void sort_vector(Vector *vec)</div><div class="ttdoc">Ordena o vetor alfabeticamente para busca binária.</div><div class="ttdef"><b>Definição</b> <a href="vector_8c_source.html#l00291">vector.c:291</a></div></div>
+<div class="ttc" id="avector_8c_html_a198417967ef24ada410abbb475e6966d"><div class="ttname"><a href="vector_8c.html#a198417967ef24ada410abbb475e6966d">free_vector</a></div><div class="ttdeci">void free_vector(Vector *vec)</div><div class="ttdoc">Libera a memória de um vetor.</div><div class="ttdef"><b>Definição</b> <a href="vector_8c_source.html#l00324">vector.c:324</a></div></div>
+<div class="ttc" id="avector_8c_html_a35bc0bd41756eac44ddb7371fb376cd6"><div class="ttname"><a href="vector_8c.html#a35bc0bd41756eac44ddb7371fb376cd6">search_word_vector</a></div><div class="ttdeci">WordInfo * search_word_vector(Vector *vec, const char *word)</div><div class="ttdoc">Busca uma palavra no vetor usando busca binária.</div><div class="ttdef"><b>Definição</b> <a href="vector_8c_source.html#l00210">vector.c:210</a></div></div>
+<div class="ttc" id="avector_8c_html_a9aea6032f8988c3f8189e9f9a130ff54"><div class="ttname"><a href="vector_8c.html#a9aea6032f8988c3f8189e9f9a130ff54">insert_word_vector</a></div><div class="ttdeci">void insert_word_vector(Vector *vec, const char *word, const char *title, const char *author, const char *verse_snippet, int freq_in_song)</div><div class="ttdoc">Insere uma palavra no vetor com suas informações.</div><div class="ttdef"><b>Definição</b> <a href="vector_8c_source.html#l00136">vector.c:136</a></div></div>
+<div class="ttc" id="avector_8c_html_abc8b3afaf6222e229bebe8c8ebf9ecc8"><div class="ttname"><a href="vector_8c.html#abc8b3afaf6222e229bebe8c8ebf9ecc8">create_vector</a></div><div class="ttdeci">Vector * create_vector(int initial_capacity)</div><div class="ttdoc">Cria um novo vetor dinâmico.</div><div class="ttdef"><b>Definição</b> <a href="vector_8c_source.html#l00047">vector.c:47</a></div></div>
+</div><!-- fragment --> </div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
