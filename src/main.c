@@ -1,7 +1,7 @@
 /**
  * @file main.c
  * @brief Programa principal do repositório de letras de músicas
- * @author AED2 - Algoritmos e Estruturas de Dados II
+ * @author Davi Santos Oliveira, Matheus Silva Escarpinatti, Lucas Souza Soares
  * @version 1.0
  * 
  * @details Este arquivo contém a função main e o loop principal do programa,
