@@ -15,3 +15,14 @@ main.o
 repository.o
 tree.o
 vector.o
+
+# Arquivos do Doxygen
+docs/html/
+docs/latex/
+docs/man/
+docs/rtf/
+docs/xml/
+docs/perlmod/
+docs/doxywarn.txt
+docs/doxygen_sqlite3.db
+docs/doxygen.log
